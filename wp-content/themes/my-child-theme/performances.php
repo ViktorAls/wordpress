@@ -41,7 +41,10 @@ get_header(); ?>
             endif;
             ?>
         <?php endwhile; // end of the loop. ?>
-        <?php echo do_shortcode('[ajax_pagination]') ?>
+        <?php if (shortcode_exists('ajax_pagination')) {
+            echo do_shortcode('[ajax_pagination]');
+        }
+        ?>
     </main><!-- #main -->
 </section><!-- #primary -->
 <?php get_sidebar(); ?>
