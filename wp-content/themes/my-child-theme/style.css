@@ -1,0 +1,13 @@
+/**
+ * Theme Name: My Child Theme
+ * Template: unite
+ */
+@import url('../unite/style.css');
+
+.entry-title{
+    font-size: 24px;
+}
+
+footer.entry-meta{
+    height: 86px;
+}
